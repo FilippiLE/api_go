@@ -1,14 +1,14 @@
 package main
 
-import(
-"github.com/gin-gonic/gin"
-"net/http"
+import (
+	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
-func mapURLsToControllers(){
-	Router.GET("/ping",Ping)
+func mapURLsToControllers() {
+	Router.GET("/ping", Ping)
 }
 
-func Ping(c *gin.Context){
-c.String(http.StatusOK, "pong")
+func Ping(c *gin.Context) {
+	c.String(http.StatusOK, "pong")
 }
